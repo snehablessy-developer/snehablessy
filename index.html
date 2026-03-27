@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sneha Blessy | Full Stack Developer</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Poppins',sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#0f172a,#1e3a8a);
+  color:#fff;
+}
+
+/* NAVBAR */
+header{
+  display:flex;
+  justify-content:space-between;
+  padding:20px 50px;
+  background:rgba(255,255,255,0.05);
+  backdrop-filter:blur(10px);
+}
+
+header h1{
+  color:#38bdf8;
+}
+
+nav a{
+  margin:0 15px;
+  color:#fff;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#38bdf8;
+}
+
+/* HERO */
+.hero{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:80px 50px;
+}
+
+.hero-text{
+  max-width:50%;
+  animation:fadeIn 1s ease;
+}
+
+.hero-text h2{
+  font-size:45px;
+}
+
+.hero-text span{
+  color:#38bdf8;
+}
+
+.hero-text p{
+  margin:15px 0;
+}
+
+.btn{
+  padding:10px 20px;
+  background:#38bdf8;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+
+/* IMAGE */
+.hero-img img{
+  width:300px;
+  border-radius:20px;
+  box-shadow:0 0 30px rgba(56,189,248,0.5);
+  animation:float 3s infinite ease-in-out;
+}
+
+/* SECTIONS */
+section{
+  padding:60px 50px;
+}
+
+.title{
+  font-size:30px;
+  color:#38bdf8;
+  margin-bottom:20px;
+}
+
+/* PROJECTS */
+.projects{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+.card{
+  background:rgba(255,255,255,0.08);
+  padding:20px;
+  border-radius:15px;
+  transition:0.3s;
+  backdrop-filter:blur(10px);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+.card a{
+  display:inline-block;
+  margin-top:10px;
+  color:#38bdf8;
+}
+
+/* CONTACT */
+.contact p{
+  margin:10px 0;
+}
+
+/* FOOTER */
+footer{
+  text-align:center;
+  padding:20px;
+  background:rgba(255,255,255,0.05);
+}
+
+/* ANIMATIONS */
+@keyframes fadeIn{
+  from{opacity:0; transform:translateY(30px);}
+  to{opacity:1; transform:translateY(0);}
+}
+
+@keyframes float{
+  0%{transform:translateY(0);}
+  50%{transform:translateY(-15px);}
+  100%{transform:translateY(0);}
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Sneha</h1>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  
+  <div class="hero-text">
+    <h2>Hi, I'm <span>Sneha Blessy</span></h2>
+    <p>Full Stack Developer passionate about building modern web applications</p>
+    <a href="#projects"><button class="btn">View Projects</button></a>
+  </div>
+
+  <div class="hero-img">
+    <img src="images/profile.jpg">
+  </div>
+
+</section>
+
+<!-- ABOUT -->
+<section>
+  <h2 class="title">About Me</h2>
+  <p>I build scalable full stack applications using Node.js, Express, and JavaScript with clean UI design and efficient backend logic.</p>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <h2 class="title">Projects</h2>
+
+  <div class="projects">
+
+    <div class="card">
+      <h3>Task Management System</h3>
+      <p>Full stack app with authentication and CRUD operations</p>
+      <a href="#">Live</a> | <a href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Auth & Role System</h3>
+      <p>Secure backend with role-based access</p>
+      <a href="#">Live</a> | <a href="#">GitHub</a>
+    </div>
+
+    <div class="card">
+      <h3>Student Enrollment API</h3>
+      <p>Manage students and courses using REST API</p>
+      <a href="#">Live</a> | <a href="#">GitHub</a>
+    </div>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2 class="title">Contact</h2>
+  <p>Email: snehablessy18@gmailcom</p>
+  <p>GitHub: snehablessydeveloper</p>
+</section>
+
+<footer>
+  <p>© 2026 Sneha Blessy</p>
+</footer>
+
+</body>
+</html>
